@@ -1,0 +1,114 @@
+<!--
+Part 1: Form Creation
+Create a Basic Contact Form with the following fields:
+Name (text input)
+Email (email input)
+Message (textarea)
+Submit button
+Bonus: Add a radio button group asking how the user found the site (e.g., Google, Social Media).
+
+Part 2: Table Structure
+Create a Table that displays some sample product data:
+Columns: Product Name, Price, and Quantity.
+Rows: At least 3 products with their respective details.
+Bonus: Add a header row to label the columns.
+
+Part 3: Navigation Bar
+Create a Simple Navigation Bar with the following links:
+Home
+About
+Contact
+Use an unordered list (<ul>) to organize the links.
+
+
+Part 4: Adding Images
+Add a Placeholder Image (use https://placehold.co/300x200).
+Bonus: Add a second image with a rounded border using the style attribute
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <link rel="stylesheet" href="">
+    <!--Use Shift + Tab + ! to make template-->
+</head>
+<body>
+    <!--Creating navigation bar-->
+   
+    <h1>Navigation Bar</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Form</h1>
+    <!--Creating contact form name, email-->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <!--Creating message box-->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea><br><br>
+    <!--radio Button-->
+    <div>
+       <label>How did you find us?</label>
+       <label>
+            <input type="radio" name="referral" value="google">Google
+       </label>
+       <label>
+            <input type="radio" name="referral" value="friend">Friend
+       </label>
+       <label>
+            <input type="radio" name="referral" value="other">Other
+       </label>
+    </div>
+    <!--Creating submit button-->
+    <button type="submit">Submit</button>
+    <!--Creating Table Structure Product name price and qty-->
+    <h1>Tables for puducts</h1>
+    <table>
+        <thead>
+            <!--Table Header with 3 rows-->
+            <tr>
+                <th>Product Name</th>
+                <th> Price</th>
+                <th> Qty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Table Body with 3 rows-->
+            <tr>
+                <!--Column 1-->
+                <td>T-shirt</td>
+                <td>$1.25</td>
+                <td><input type="number" value="1"></td>
+            </tr>
+            <tr>
+                <!--Column 2-->
+                <td>Key Chain</td>
+                <td>$2.25</td>
+                <td><input type="number" value="1"></td>
+            </tr>
+            <tr>
+                <!--Column 3-->
+                <td>Hats</td>
+                <td>$6.25</td>
+                <td><input type="number" value="1"></td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <!--Creating Image Placeholder-->
+    <h1>Image Placeholder</h1>
+    <img src="https://via.placeholder.com/300x200/FF0000/FFFFFF" alt="Red Placeholder">
+   
+</body>
+</html>
